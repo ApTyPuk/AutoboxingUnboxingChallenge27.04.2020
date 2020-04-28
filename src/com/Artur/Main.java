@@ -3,6 +3,6 @@ package com.Artur;
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
+	//This is a test to check how git hub works
     }
 }
