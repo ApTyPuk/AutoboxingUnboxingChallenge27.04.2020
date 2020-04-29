@@ -11,11 +11,24 @@ public class Branches extends Bank {
         this.branchCustomers = new ArrayList<Customers>();
     }
 
-    private void addBranch(){ // Customers are attached to the branch. Transactions attached to customer
-
+    public String getBranchName() {
+        return branchName;
     }
 
-    private void addCustomerToCertainBranch(){ //+initial a transaction same time
+    public ArrayList<Customers> getBranchCustomers() {
+        return branchCustomers;
+    }
+
+    private static Branches addBranch(String branchName){   // Customers are attached to the branch. Transactions attached to customer
+        return new Branches(branchName);
+    }
+
+    private void addCustomerToCertainBranch(Branches branchName, String customerName, Double transaction){ //+initial a transaction same time
+        Customers.createCustomer(branchName.getBranchName(), customerName);
+        Customers.addTransaction();
+
+        branchName.getBranchCustomers().create;
+
 
     }
 
